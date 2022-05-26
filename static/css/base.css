@@ -40,8 +40,15 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /*use important to override link colours for <a> elements */
+    color: black !important; /* use important to override link colours for <a> elements */
     border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
 }
 
 .shop-now-button:hover,
@@ -67,13 +74,13 @@ body {
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
@@ -89,11 +96,10 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link, 
+.btt-link,
 .update-link,
 .remove-item {
     cursor: pointer;
-
 }
 
 input[name='q']::placeholder {
@@ -178,21 +184,21 @@ input[name='q']::placeholder {
 }
 
 /* Allauth form formatting */
-.all-auth-form.inner-content p {
+.allauth-form.inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text secondary */
+    color: #6c757d; /* text-secondary */
 }
 
-.all-auth-form.inner-content input{
+.allauth-form.inner-content input {
     border-color: #000;
     border-radius: 0;
 }
 
-.all-auth-form.inner-content label:not([for='id_remember']) {
+.allauth-form.inner-content label:not([for='id_remember']) {
     display: none;
 }
 
-.all-auth-form.inner-content input::placeholder {
+.allauth-form.inner-content input::placeholder {
     color: #aab7c4;
 }
 
